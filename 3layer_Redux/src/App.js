@@ -103,17 +103,17 @@ class App extends React.Component {
           </div>
           <div className="col-3 ">
             <h6>List</h6>
-            {/* <WrapperList
+            <WrapperList
               // data1={this.state.list}
               // click={this.handleListOnClick}
-            /> */}
+            />
           </div>
           <div className="col-7 ">
             <h6>Item</h6>
-            {/* <WrapperItem 
+            <WrapperItem 
             // addToCart={this.addToCart} 
             // data1={this.state.item}
-             /> */}
+             />
           </div>
         </div>
       </div>

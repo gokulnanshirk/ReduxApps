@@ -6,11 +6,11 @@ import Admin from './components/admin/admin'
 import { bootstrap } from "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import rootReducer from './redux/reducer'
-import { createStore } from "redux";
+import { createStore , applyMiddleware } from "redux";
 import { Provider } from "react-redux";
+import thunk from 'redux-thunk'
 
-
-const store = createStore(rootReducer);
+const store = createStore(rootReducer,applyMiddleware(thunk));
 console.log("index.js below store")
 ReactDOM.render(
   <Provider store={store}>

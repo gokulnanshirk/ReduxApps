@@ -1,4 +1,4 @@
-import data from "../data/data";
+import data from "../data/data"; 
 
 let rootReducer = function(currentState = data, action) {
   console.log("action is :", action, "current state is :", currentState);
